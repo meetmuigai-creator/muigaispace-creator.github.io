@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="a simple website to showcase my learning and projects">
+    <meta name="Author" content="Meetmuigai">
+    <title>Meetmuigai'Portfolio </title>
+        <!-- Favicon -->
+    <link rel="icon" href="WhatsApp Image 2025-09-24 at 11.23.39_4d7e3c30.jpg" type="image/x-icon"> 
+    <!-- Link to External CSS -->
+    </head>
+    <body>
+        <!--head section-->
+<header>
+        <div class="logo">
+         <img src="2meetmuigai.png" alt="metcity" class="logo-image" width="300" height="300">
+        /* General Reset    */
+        *  <style>
+        /* General Reset */
+        
+         p{  margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;}
+        
+
+        body {
+            line-height: 1.6;
+            background: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: #222;
+            color: #fff;
+            padding: 1rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header .logo img {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #00adb5;
+        }
+
+        .hero {
+            background: url('city-7358078_1280.jpg') no-repeat center center/cover;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-text {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-text h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero-text p {
+            font-size: 1.3rem;
+        }
+
+        .about {
+            padding: 3rem 2rem;
+            background: #fff;
+            text-align: center;
+        }
+
+        .about h2 {
+            margin-bottom: 2rem;
+            font-size: 2rem;
+            color: #00adb5;
+        }
+
+        .about-container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .about-container img {
+            border-radius: 10px;
+            max-width: 300px;
+            height: auto;
+        }
+
+        .projects {
+            padding: 3rem 2rem;
+            background: #f9f9f9;
+            text-align: center;
+        }
+
+        .projects h2 {
+            margin-bottom: 2rem;
+            font-size: 2rem;
+            color: #00adb5;
+        }
+
+        .project-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .project-card {
+            background: #fff;
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+        }
+
+        .project-card h3 {
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+
+        .project-card p {
+            font-size: 0.95rem;
+            color: #555;
+        }
+
+        .contact {
+            padding: 3rem 2rem;
+            background: #fff;
+            text-align: center;
+        }
+
+        .contact h2 {
+            margin-bottom: 2rem;
+            font-size: 2rem;
+            color: #00adb5;
+        }
+
+        form {
+            max-width: 500px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        form label {
+            text-align: left;
+            font-weight: bold;
+            color: #333;
+        }
+
+        form input, 
+        form textarea {
+            padding: 0.8rem;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 1rem;
+            width: 100%;
+        }
+
+        form button {
+            padding: 0.8rem;
+            background: #00adb5;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        form button:hover {
+            background: #007b7f;
+        }
+
+        footer {
+            background: #222;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 1rem;
+                margin-top: 1rem;
+            }
+
+            .hero-text h1 {
+                font-size: 2rem;
+            }
+
+            .hero-text p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Hi, I'm Meetmuigai. A Web Designer & Developer</p>
+        </div>
+    </section>
+     <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <div class="about-container">
+            <img src="WhatsApp Image 2025-09-24 at 11.23.40_5b841e75.jpg" alt="metcity" class="logo-image" width="300" height="300">
+
+            <div class="about-info">
+                <p>I'm a passionate web designer and developer learning how to create beautiful, functional websites. I am constantly learning and improving my skills in web development and graphic design.
+                    This website is the very first project I created through code. What began as a simple experiment quickly turned into something addictive and exciting. Each day I found myself learning something new — sometimes it was a small feature, other times just a single line of HTML or CSS, but every discovery felt like a big achievement.
+
+The process taught me that coding isn’t just about writing instructions for a computer, it’s about patience, curiosity, and growth. I enjoyed watching my ideas slowly come to life on the screen and realizing that even small steps build into something meaningful.
+
+This site represents the start of my journey into web development. It may be simple, but to me, it’s special because it shows how much can be achieved with consistency, practice, and a passion to keep learning every day. And with every new line of code, I felt proud and motivated to continue improving and building more projects in the future. 😊
+
+                </p>
+            </div>
+        </div>
+    </section>
+     <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="project-cards">
+            <div class="project-card">
+                <img src="WhatsApp Image 2025-09-24 at 11.23.40_861e278e.jpg" alt="metcity" class="logo-image" width="300" height="300">
+
+                <h3>Project 1</h3>
+                <p>This is a description of my first project.</p>
+            </div>
+            <div class="project-card">
+                <img src="WhatsApp Image 2025-09-24 at 11.23.39_7f878599.jpg" alt="metcity" class="logo-image" width="300" height="300">
+
+                <h3>Project 2</h3>
+                <p>This is a description of my second project.</p>
+            </div>
+            <div class="project-card">
+                <img src="WhatsApp Image 2025-09-24 at 11.23.40_fdf31b87.jpg" alt="metcity" class="logo-image" width="300" height="300">
+
+                <h3>Project 3</h3>
+                <p>This is a description of my third project.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+        contact <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form action="mailto:meetmuigai@example.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Meetmuigai. All rights reserved.</p>
+    </footer>
+</body>
+</html>
